@@ -54,7 +54,7 @@ public class ProfileFacadeREST extends AbstractFacade<Profile> {
     public void remove(@PathParam("id") Integer id) {
         super.remove(super.find(id));
     }
-
+    
     @GET
     @Path("{id}")
     @Produces({MediaType.APPLICATION_JSON})
